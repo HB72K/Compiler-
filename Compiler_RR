@@ -1,0 +1,33 @@
+#
+##################################
+# Gr2_srk  <gr2.stark@gmail.com> #	
+# Script Basico para compilar RR #
+##################################
+#
+
+#!/bin/bash
+
+#Inicio
+echo ''
+echo "======================"
+echo ''
+echo " DemoniacTeamCompiler"
+echo '     Version RR       '
+echo ''
+echo "======================"
+echo ''
+
+#SOURCE
+#Tres descargas por que luego falla :v
+cd 'RR LP' 
+repo sync -j16 -f --force-sync --no-clone-bundle
+repo sync -j16 -f --force-sync --no-clone-bundle
+repo sync -j16 -f --force-sync --no-clone-bundle
+
+#LocalManifest
+git clone https://github.com/DemoniacTeamDevs/local_manifests_hwY635 -b master .repo/local_manifests
+repo sync --force-sync --force-broken
+
+#Compilacion
+. build/envsetup.sh
+brunch hwY635
