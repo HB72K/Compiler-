@@ -27,7 +27,7 @@ echo ' '
 echo ' '
 echo ' Estableciendo tiempo de apagado en 4 horas'
 
-repo sync -j16 -f --force-sync --no-clone-bundle
+ make clean && make clobber
 
 
 #Compilacion
