@@ -1,0 +1,9 @@
+abrir la  terminal y telea esto
+
+cd Compiler-
+
+chmod +x lib.sh
+
+./lib.sh
+
+ dar enter y listo prro n.n
