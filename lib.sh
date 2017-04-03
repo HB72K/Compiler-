@@ -16,7 +16,7 @@ red='\033[0;31m'
 purple='\033[1;35m'
 nocol='\033[0m'
 
-printf "${green}Script para las compilacones de customs ROM Lollipop,Marshmallow, Nougat...${nc}\n"
+printf "${green}Script para instalar las dependencias de customs ROM Lollipop,Marshmallow, Nougat...${nc}\n"
 
 printf "${cyan}...................................................................................................${nc}\n"
 
