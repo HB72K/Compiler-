@@ -1,5 +1,7 @@
 abrir la  terminal y telea esto
 
+git clone https://github.com/HB72K/Compiler-.git
+
 cd Compiler-
 
 chmod +x lib.sh
