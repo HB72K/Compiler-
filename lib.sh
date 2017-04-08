@@ -44,7 +44,12 @@ printf "${yellow}presiona enter...${nc}\n"
 
 sudo add-apt-repository ppa:webupd8team/java 
 
-sudo apt-get update && sudo apt-get install oracle-java8-installer
+sudo apt-get update && sudo apt-get install oracle-java8-installer -s
+
+
+sudo add-apt-repository ppa:openjdk-r/ppa
+
+sudo apt-get update && sudo apt-get install openjdk-8-jdk
 
 
 printf "${purple}Developer HB72K :v ...${nc}\n"
