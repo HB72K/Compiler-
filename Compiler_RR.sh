@@ -18,7 +18,7 @@ export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -X
 ./prebuilts/sdk/tools/jack-admin kill-server
 ./prebuilts/sdk/tools/jack-admin start-server
 rm -rvf ../.ccache
-prebuilts/misc/linux-x86/ccache/ccache -M 50G
+prebuilts/misc/linux-x86/ccache/ccache -M 80G
 
 echo ' ' 
 echo ' '
@@ -31,5 +31,5 @@ echo ' Estableciendo tiempo de apagado en 4 horas'
 
 
 #Compilacion
-. build/envsetup.sh && brunch hwY635
+. build/envsetup.sh && brunch cherry
  
